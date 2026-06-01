@@ -4,7 +4,6 @@
 - **Aluno:** Kauan Maciel Forgiarini | **RM:** 574005
 - **Aluno:** Wagner Adriano De Souza Silva Junio | **RM:** 569431
 - **Aluno:** Thiago Lucas da Costa Bessa | **RM:** 570367
-- **Aluna:** Beatriz de Oliveira Ossola Ribeiro | **RM:** 570190
 - **Aluno:** Willian Kauê Tobias do Carmo | **RM:** 570038
 
 ---
