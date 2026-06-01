@@ -1,0 +1,162 @@
+{
+  "features": [
+    "UMIDADE_SOLO_PCT",
+    "PH_SOLO",
+    "TEMPERATURA_C",
+    "CHUVA_PREVISTA_MM",
+    "N_KGHA",
+    "P_KGHA",
+    "K_KGHA"
+  ],
+  "targets": {
+    "volume_irrigacao": "VOLUME_IRRIGACAO_L",
+    "necessidade_fert": "NECESSIDADE_FERT_KGHA",
+    "rendimento_esperado": "RENDIMENTO_ESPERADO_SCHA"
+  },
+  "resultados": {
+    "volume_irrigacao": {
+      "coluna": "VOLUME_IRRIGACAO_L",
+      "melhor_modelo": "Gradient Boosting",
+      "melhor_r2": 0.8112,
+      "modelos": {
+        "Regressão Linear": {
+          "MAE": 0.6133,
+          "MSE": 0.6313,
+          "RMSE": 0.7945,
+          "R2": 0.4908,
+          "CV_R2_mean": 0.5798,
+          "CV_R2_std": 0.0574
+        },
+        "Ridge Regression": {
+          "MAE": 0.6123,
+          "MSE": 0.6306,
+          "RMSE": 0.7941,
+          "R2": 0.4914,
+          "CV_R2_mean": 0.5803,
+          "CV_R2_std": 0.0571
+        },
+        "Random Forest": {
+          "MAE": 0.3819,
+          "MSE": 0.323,
+          "RMSE": 0.5684,
+          "R2": 0.7394,
+          "CV_R2_mean": 0.7826,
+          "CV_R2_std": 0.0776
+        },
+        "Gradient Boosting": {
+          "MAE": 0.3664,
+          "MSE": 0.2341,
+          "RMSE": 0.4839,
+          "R2": 0.8112,
+          "CV_R2_mean": 0.8313,
+          "CV_R2_std": 0.0752
+        }
+      },
+      "feature_importance": {
+        "UMIDADE_SOLO_PCT": 0.622,
+        "PH_SOLO": 0.068,
+        "TEMPERATURA_C": 0.0209,
+        "CHUVA_PREVISTA_MM": 0.2565,
+        "N_KGHA": 0.0039,
+        "P_KGHA": 0.0084,
+        "K_KGHA": 0.0204
+      }
+    },
+    "necessidade_fert": {
+      "coluna": "NECESSIDADE_FERT_KGHA",
+      "melhor_modelo": "Gradient Boosting",
+      "melhor_r2": 0.78,
+      "modelos": {
+        "Regressão Linear": {
+          "MAE": 2.8831,
+          "MSE": 14.226,
+          "RMSE": 3.7717,
+          "R2": 0.6254,
+          "CV_R2_mean": 0.6166,
+          "CV_R2_std": 0.118
+        },
+        "Ridge Regression": {
+          "MAE": 2.8817,
+          "MSE": 14.2104,
+          "RMSE": 3.7697,
+          "R2": 0.6258,
+          "CV_R2_mean": 0.6169,
+          "CV_R2_std": 0.117
+        },
+        "Random Forest": {
+          "MAE": 2.9162,
+          "MSE": 13.2058,
+          "RMSE": 3.634,
+          "R2": 0.6523,
+          "CV_R2_mean": 0.7324,
+          "CV_R2_std": 0.0651
+        },
+        "Gradient Boosting": {
+          "MAE": 2.2154,
+          "MSE": 8.3541,
+          "RMSE": 2.8903,
+          "R2": 0.78,
+          "CV_R2_mean": 0.8016,
+          "CV_R2_std": 0.0583
+        }
+      },
+      "feature_importance": {
+        "UMIDADE_SOLO_PCT": 0.0041,
+        "PH_SOLO": 0.156,
+        "TEMPERATURA_C": 0.0126,
+        "CHUVA_PREVISTA_MM": 0.0103,
+        "N_KGHA": 0.4966,
+        "P_KGHA": 0.2433,
+        "K_KGHA": 0.0771
+      }
+    },
+    "rendimento_esperado": {
+      "coluna": "RENDIMENTO_ESPERADO_SCHA",
+      "melhor_modelo": "Gradient Boosting",
+      "melhor_r2": 0.6981,
+      "modelos": {
+        "Regressão Linear": {
+          "MAE": 3.7152,
+          "MSE": 20.1212,
+          "RMSE": 4.4857,
+          "R2": 0.5774,
+          "CV_R2_mean": 0.3846,
+          "CV_R2_std": 0.2004
+        },
+        "Ridge Regression": {
+          "MAE": 3.7183,
+          "MSE": 20.146,
+          "RMSE": 4.4884,
+          "R2": 0.5768,
+          "CV_R2_mean": 0.3851,
+          "CV_R2_std": 0.1988
+        },
+        "Random Forest": {
+          "MAE": 3.0735,
+          "MSE": 17.0113,
+          "RMSE": 4.1245,
+          "R2": 0.6427,
+          "CV_R2_mean": 0.6504,
+          "CV_R2_std": 0.0531
+        },
+        "Gradient Boosting": {
+          "MAE": 2.7025,
+          "MSE": 14.3749,
+          "RMSE": 3.7914,
+          "R2": 0.6981,
+          "CV_R2_mean": 0.7067,
+          "CV_R2_std": 0.0914
+        }
+      },
+      "feature_importance": {
+        "UMIDADE_SOLO_PCT": 0.4295,
+        "PH_SOLO": 0.0473,
+        "TEMPERATURA_C": 0.0632,
+        "CHUVA_PREVISTA_MM": 0.013,
+        "N_KGHA": 0.1404,
+        "P_KGHA": 0.1738,
+        "K_KGHA": 0.1328
+      }
+    }
+  }
+}
